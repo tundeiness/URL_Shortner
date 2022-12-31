@@ -32,6 +32,6 @@ class UrlsController < ApplicationController
 
   def url_params
     # params.require(:url).permit(:name, :slug)
-    params.require(:url).permit(:name,:original_url,:user_id)
+    params.require(:url).permit(:name, :original_url, :user_id)
   end
 end

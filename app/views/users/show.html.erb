@@ -1,0 +1,6 @@
+<h2><%= @user.username %></h2>
+<% @user.urls.each do |url| %>
+ <ul>
+   <li><%= url.name %> - <%= url.short_url %> - <%= url.original_url %></li>
+ </ul>
+<% end %>
