@@ -5,10 +5,10 @@ class Url < ApplicationRecord
   # before_validate :validate_name
   before_save :set_uri
 
-
-  def short_uri 
+  def short_uri
     "#{ENV['HOST_URL']}/r?slug=#{slug}"
   end
+
   private
 
   def set_uri
