@@ -3,8 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root to: 'urls#index'
+  # root to: 'urls#index'
 
-  get 'r', to: 'redirects#index'
-  resources :urls, only: %i[create index]
+  # get 'r', to: 'redirects#index'
+  # resources :urls, only: %i[create index]
+  resources :users do
+    resources :urls, only: [:index, :new, :create, :show]
+  end
 end
