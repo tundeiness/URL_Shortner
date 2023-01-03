@@ -84,3 +84,4 @@ production:
   database: URL_Shortner_production
   username: URL_Shortner
   password: <%= ENV["URL_SHORTNER_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
