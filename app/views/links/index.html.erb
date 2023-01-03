@@ -2,7 +2,7 @@
 <%= form_with model: @links, url: '/links' do |f| %>
   <%= f.label :original_url, "Link to Shorten" %>
   <%= f.text_field :original_url%>
-  <%= f.submit "Add" %>
+  <%= f.submit "Shorten" %>
 <% end %>
 
 <%= render partial: 'shared/flashes' %>
@@ -19,7 +19,7 @@
                 <th colspan="3"></th>
               </tr>
             </thead>
-    
+
             <tbody>
               <% @links.each do |link| %>
                 <tr>
