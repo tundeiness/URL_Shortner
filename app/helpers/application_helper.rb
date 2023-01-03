@@ -1,10 +1,12 @@
 module ApplicationHelper
-  def flash_html_class(type)
-    case type
+  def flash_helper(flash_name)
+    case flash_name
     when 'success'
-      'primary'
-    when 'error'
-      'danger'
+      'success'
+    when "notice"
+      'notice'
+    when "error"
+      'error'
     end
   end
 end

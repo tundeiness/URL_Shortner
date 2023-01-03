@@ -14,3 +14,28 @@
 .danger{
   background-color: palevioletred;
 }
+
+.info {
+  background-color: grey;
+}
+
+.error {
+  color: red;
+  background-color: whitesmoke;
+}
+
+.notice{
+  background-color: aqua;
+} 
+
+.alert {
+  background-color: red;
+}
+
+.messages{
+  background-color: palegreen;
+}
+
+.custom-alert {
+  background-color: palegoldenrod;
+}
